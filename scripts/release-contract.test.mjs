@@ -85,12 +85,12 @@ test('Compose and Dockerfiles use immutable multi-architecture image references'
 
   assert.equal(contract.compose.version, undefined);
   assert.deepEqual(contract.images, {
-    traefik: 'traefik:v3.1.7@sha256:74d72c7a1345984f186bddbabcc462b2128d0d8054177dc84afaeac4db1f0f56',
-    frontend: 'nginx:1.27.5-alpine@sha256:65645c7bb6a0661892a8b03b89d0743208a18dd2f3f17a54ef4b76fb8e2f2a10',
+    traefik: 'traefik:v3.7.10@sha256:9c3b91d5fb7770853ca5c1124a23c34bf2d9b47ffaebeab2614cbaf410dcb2ac',
+    frontend: 'nginx:1.31.3-alpine@sha256:4a73073bd557c65b759505da037898b61f1be6cbcc3c2c3aeac22d2a470c1752',
     postgres: 'postgres:16.9-alpine@sha256:7c688148e5e156d0e86df7ba8ae5a05a2386aaec1e2ad8e6d11bdf10504b1fb7',
-    redis: 'redis:7.4.5-alpine@sha256:bb186d083732f669da90be8b0f975a37812b15e913465bb14d845db72a4e3e08',
+    redis: 'redis:8.10.0-alpine@sha256:978f0e01593e65eed801f2402944efcd936d43b5027e4908a7897baf88ed6241',
     qdrant: 'qdrant/qdrant:v1.12.1@sha256:d774e7bb65744454984c6021637a0da89271f30df15e48601a9fafc926d26b1f',
-    neo4j: 'neo4j:5.24.2-community@sha256:2e7e4eea5bc1eec581a3097c018dfeb3747f3638e67a963c10554825c31c1425',
+    neo4j: 'neo4j:5.26.29-community@sha256:d9dd3dc7d1c78fa959191ff02dbdcbefadceaf83eee23428fb92a58cac8ad3fe',
     minio: 'minio/minio:RELEASE.2025-04-22T22-12-26Z@sha256:a1ea29fa28355559ef137d71fc570e508a214ec84ff8083e39bc5428980b015e',
   });
   assert.equal(
